@@ -1,0 +1,143 @@
+{
+  "name": "frame_312",
+  "version": 33,
+  "source-key": {
+    "type": "figma",
+    "file": "ZOIsyQ1RNjRgsenuwzCjng",
+    "node": "302:970",
+    "version": "5948819833",
+    "component-id": "b64ff07ead505443bc58f6c77711457354b775d5"
+  },
+  "default": "Frame 312",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Alarm Name"
+      },
+      {
+        "type": "group",
+        "id": "fi-sr-pencil"
+      },
+      {
+        "type": "vector",
+        "id": "Vector"
+      },
+      {
+        "type": "vector",
+        "id": "Vector1"
+      }
+    ],
+    "modes": {
+      "Frame 312": {
+        "rules": [
+          {
+            "id": "top_level",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Alarm Name",
+              "fi-sr-pencil"
+            ],
+            "item-spacing": 8.0,
+            "clip-content": false
+          },
+          {
+            "id": "Alarm Name",
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "Alarm Name",
+            "overflow": "visible",
+            "text-align": "left",
+            "line-height": 1.171875
+          },
+          {
+            "id": "fi-sr-pencil",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 18.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 18.0
+              }
+            },
+            "is-structured": false,
+            "children": [
+              "Vector",
+              "Vector1"
+            ]
+          },
+          {
+            "id": "Vector",
+            "margin": {
+              "top": 4.331756591796875,
+              "right": 4.331998825073242,
+              "bottom": 0.0002651214599609375
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "vector.svg"
+          },
+          {
+            "id": "Vector1",
+            "margin": {
+              "left": 11.946533203125,
+              "top": 0.064666748046875,
+              "right": 0.06476593017578125,
+              "bottom": 11.946633338928223
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "vector1.svg"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Frame 312",
+      "size": {
+        "width": 104.0,
+        "height": 18.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

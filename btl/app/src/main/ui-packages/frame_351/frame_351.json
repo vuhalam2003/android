@@ -1,0 +1,109 @@
+{
+  "name": "frame_351",
+  "version": 33,
+  "source-key": {
+    "type": "figma",
+    "file": "ZOIsyQ1RNjRgsenuwzCjng",
+    "node": "302:966",
+    "version": "5948819833",
+    "component-id": "206b807d4abb3ebf1132b75aab419b0696392908"
+  },
+  "default": "Frame 351",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Cancel"
+      },
+      {
+        "type": "text",
+        "id": "Alarm"
+      },
+      {
+        "type": "text",
+        "id": "Edit"
+      }
+    ],
+    "modes": {
+      "Frame 351": {
+        "rules": [
+          {
+            "id": "top_level",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Cancel",
+              "Alarm",
+              "Edit"
+            ],
+            "item-spacing": 89.0,
+            "clip-content": false
+          },
+          {
+            "id": "Cancel",
+            "font-weight": 700.0,
+            "color": {},
+            "text-content": "Cancel",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": 18.0,
+            "line-height": 1.2626953125,
+            "typeface": "Oxygen"
+          },
+          {
+            "id": "Alarm",
+            "font-weight": 700.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "Alarm",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": 24.0,
+            "line-height": 1.2626953125,
+            "typeface": "Oxygen"
+          },
+          {
+            "id": "Edit",
+            "font-weight": 700.0,
+            "color": {},
+            "text-content": "Edit",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": 18.0,
+            "line-height": 1.2626953125,
+            "typeface": "Oxygen"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Frame 351",
+      "size": {
+        "width": 343.0,
+        "height": 30.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

@@ -1,0 +1,24 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AlarmItemBackground">
+        <item name="android:background">@drawable/alarm_item_background</item>
+    </style>
+
+    <style name="ClockItemBackground">
+        <item name="android:background">@drawable/clock_item_background</item>
+    </style>
+
+    <style name="FabBackground">
+        <item name="android:background">@drawable/fab_background</item>
+    </style>
+
+    <style name="ButtonBackground">
+        <item name="android:background">@drawable/button_background</item>
+    </style>
+</resources>

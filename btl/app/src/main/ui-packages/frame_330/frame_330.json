@@ -1,0 +1,105 @@
+{
+  "name": "frame_330",
+  "version": 33,
+  "source-key": {
+    "type": "figma",
+    "file": "ZOIsyQ1RNjRgsenuwzCjng",
+    "node": "302:974",
+    "version": "5948819833",
+    "component-id": "d3535c58ea83ceea4f6b5a135eccc53bd350ca9a"
+  },
+  "default": "Frame 330",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Volume"
+      },
+      {
+        "type": "adin_component",
+        "id": "Frame 315",
+        "key": "frame_315"
+      }
+    ],
+    "modes": {
+      "Frame 330": {
+        "rules": [
+          {
+            "id": "top_level",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "cross-axis-align": "start",
+            "children": [
+              "Volume",
+              "Frame 315"
+            ],
+            "item-spacing": 4.0,
+            "clip-content": false
+          },
+          {
+            "id": "Volume",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 256.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": 700.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "Volume",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align": "left",
+            "text-size": 18.0,
+            "line-height": 1.2626953125,
+            "typeface": "Oxygen"
+          },
+          {
+            "id": "Frame 315",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 343.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 16.0
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Frame 330",
+      "size": {
+        "width": 343.0,
+        "height": 43.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

@@ -1,0 +1,94 @@
+{
+  "name": "frame_267",
+  "version": 33,
+  "source-key": {
+    "type": "figma",
+    "file": "ZOIsyQ1RNjRgsenuwzCjng",
+    "node": "302:985",
+    "version": "5948819833",
+    "component-id": "1e399a750c67c9a3a0f215a9e6c6d5f84992677a"
+  },
+  "default": "Frame 267",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "5:30"
+      },
+      {
+        "type": "text",
+        "id": "AM"
+      }
+    ],
+    "modes": {
+      "Frame 267": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": false,
+            "children": [
+              "5:30",
+              "AM"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "5:30",
+            "font-weight": 100.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "5:30",
+            "overflow": "visible",
+            "text-size": 96.0,
+            "line-height": 1.171875
+          },
+          {
+            "id": "AM",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 183.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 12.0
+              }
+            },
+            "font-weight": 200.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "AM",
+            "overflow": "visible",
+            "text-size": 16.0,
+            "line-height": 1.171875
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Frame 267",
+      "size": {
+        "width": 207.0,
+        "height": 113.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

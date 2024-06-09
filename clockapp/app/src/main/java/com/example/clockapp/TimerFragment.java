@@ -1,63 +1,143 @@
-package com.example.clockapp;
+package com.example.clockapp;import android.os.Bundle;
 
-import android.os.Bundle;
 
-import androidx.fragment.app.Fragment;
-
+import android.os.CountDownTimer;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.NumberPicker;
+import android.widget.TextView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link TimerFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
 public class TimerFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    private Button btnStartTimer;
+    private Button btnCancelTimer;
+    private Button btnPauseTimer;
+    private NumberPicker npHours;
+    private NumberPicker npMinutes;
+    private NumberPicker npSeconds;
+    private TextView tvCountdown;
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private CountDownTimer countDownTimer;
+    private long totalTimeInMillis;
+    private boolean isPaused = false;
 
-    public TimerFragment() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment TimerFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static TimerFragment newInstance(String param1, String param2) {
-        TimerFragment fragment = new TimerFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
+    @Nullable
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_timer, container, false);
+
+        btnStartTimer = view.findViewById(R.id.btnStartTimer);
+        btnCancelTimer = view.findViewById(R.id.btnCancelTimer);
+        btnPauseTimer = view.findViewById(R.id.btnPauseTimer);
+        npHours = view.findViewById(R.id.npHours);
+        npMinutes = view.findViewById(R.id.npMinutes);
+        npSeconds = view.findViewById(R.id.npSeconds);
+        tvCountdown = view.findViewById(R.id.tvCountdown);
+
+        npHours.setMinValue(0);
+        npHours.setMaxValue(23);
+
+        npMinutes.setMinValue(0);
+        npMinutes.setMaxValue(59);
+
+        npSeconds.setMinValue(0);
+        npSeconds.setMaxValue(59);
+
+        btnStartTimer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startTimer();
+            }
+        });
+
+        btnCancelTimer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cancelTimer();
+            }
+        });
+
+        btnPauseTimer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                pauseTimer();
+            }
+        });
+
+        return view;
+    }
+
+    private void startTimer() {
+        int totalSeconds = (npHours.getValue() * 3600) + (npMinutes.getValue() * 60) + npSeconds.getValue();
+        totalTimeInMillis = totalSeconds * 1000;
+
+        countDownTimer = new CountDownTimer(totalTimeInMillis, 1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
+                totalTimeInMillis = millisUntilFinished;
+                updateTimerUI();
+            }
+
+            @Override
+            public void onFinish() {
+                // Timer finished, handle UI update or any other actions
+                btnStartTimer.setEnabled(true);
+                btnCancelTimer.setBackgroundColor(getResources().getColor(android.R.color.transparent));
+                tvCountdown.setText("00:00:00");
+                npHours.setVisibility(View.VISIBLE);
+                npMinutes.setVisibility(View.VISIBLE);
+                npSeconds.setVisibility(View.VISIBLE);
+                tvCountdown.setVisibility(View.GONE);
+            }
+        }.start();
+
+        btnStartTimer.setEnabled(false);
+        btnCancelTimer.setBackgroundColor(getResources().getColor(android.R.color.holo_red_dark));
+        npHours.setVisibility(View.GONE);
+        npMinutes.setVisibility(View.GONE);
+        npSeconds.setVisibility(View.GONE);
+        tvCountdown.setVisibility(View.VISIBLE);
+    }
+
+    private void updateTimerUI() {
+        int hours = (int) (totalTimeInMillis / 3600000);
+        int minutes = (int) (totalTimeInMillis % 3600000) / 60000;
+        int seconds = (int) (totalTimeInMillis % 60000) / 1000;
+
+        String timerText = String.format("%02d:%02d:%02d", hours, minutes, seconds);
+        tvCountdown.setText(timerText);
+    }
+
+    private void cancelTimer() {
+        if (countDownTimer != null) {
+            countDownTimer.cancel();
+            btnStartTimer.setEnabled(true);
+            btnCancelTimer.setBackgroundColor(getResources().getColor(android.R.color.transparent));
+            tvCountdown.setText("00:00:00");
+            npHours.setVisibility(View.VISIBLE);
+            npMinutes.setVisibility(View.VISIBLE);
+            npSeconds.setVisibility(View.VISIBLE);
+            tvCountdown.setVisibility(View.GONE);
         }
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_timer, container, false);
+    private void pauseTimer() {
+        if (!isPaused) {
+            countDownTimer.cancel();
+            isPaused = true;
+            btnPauseTimer.setText("Resume");
+        } else {
+            startTimer();
+            isPaused = false;
+            btnPauseTimer.setText("Pause");
+        }
     }
 }
+

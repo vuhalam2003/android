@@ -1,0 +1,226 @@
+{
+  "name": "frame_315",
+  "version": 33,
+  "source-key": {
+    "type": "figma",
+    "file": "ZOIsyQ1RNjRgsenuwzCjng",
+    "node": "121:3989",
+    "version": "5948819833",
+    "component-id": "870fc44375e9474bf660f89888cbe954f4ff4465"
+  },
+  "default": "Property 1=Default",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 213"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 214"
+      },
+      {
+        "type": "vector",
+        "id": "Ellipse 10"
+      }
+    ],
+    "modes": {
+      "Property 1=Default": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": false,
+            "children": [
+              "Rectangle 213",
+              "Rectangle 214",
+              "Ellipse 10"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "Rectangle 213",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 0.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 5.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 343.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 6.0
+              }
+            },
+            "vector-content": "rectangle_213.svg"
+          },
+          {
+            "id": "Rectangle 214",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 0.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 5.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 80.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 6.0
+              }
+            },
+            "vector-content": "rectangle_214.svg"
+          },
+          {
+            "id": "Ellipse 10",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 76.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 0.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 16.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 16.0
+              }
+            },
+            "vector-content": "ellipse_10.svg"
+          }
+        ]
+      },
+      "Property 1=Variant2": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": false,
+            "children": [
+              "Rectangle 213",
+              "Rectangle 214",
+              "Ellipse 10"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "Rectangle 213",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 0.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 5.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 343.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 6.0
+              }
+            },
+            "vector-content": "rectangle_215.svg"
+          },
+          {
+            "id": "Rectangle 214",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 0.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 5.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 334.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 6.0
+              }
+            },
+            "vector-content": "rectangle_216.svg"
+          },
+          {
+            "id": "Ellipse 10",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 328.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 0.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 16.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 16.0
+              }
+            },
+            "vector-content": "ellipse_11.svg"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Property 1=Default",
+      "size": {
+        "width": 343.0,
+        "height": 16.0
+      }
+    },
+    {
+      "design": "Property 1=Variant2",
+      "size": {
+        "width": 343.0,
+        "height": 16.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

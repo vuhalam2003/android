@@ -1,0 +1,109 @@
+{
+  "name": "frame_311",
+  "version": 33,
+  "source-key": {
+    "type": "figma",
+    "file": "ZOIsyQ1RNjRgsenuwzCjng",
+    "node": "302:969",
+    "version": "5948819833",
+    "component-id": "44533e953de64f19168dfba4839f08fac8f75458"
+  },
+  "default": "Frame 311",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Cancel"
+      },
+      {
+        "type": "text",
+        "id": "Set Alarm"
+      },
+      {
+        "type": "text",
+        "id": "Save"
+      }
+    ],
+    "modes": {
+      "Frame 311": {
+        "rules": [
+          {
+            "id": "top_level",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Cancel",
+              "Set Alarm",
+              "Save"
+            ],
+            "item-spacing": 65.0,
+            "clip-content": false
+          },
+          {
+            "id": "Cancel",
+            "font-weight": 700.0,
+            "color": {},
+            "text-content": "Cancel",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": 18.0,
+            "line-height": 1.2626953125,
+            "typeface": "Oxygen"
+          },
+          {
+            "id": "Set Alarm",
+            "font-weight": 700.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "Set Alarm",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": 24.0,
+            "line-height": 1.2626953125,
+            "typeface": "Oxygen"
+          },
+          {
+            "id": "Save",
+            "font-weight": 700.0,
+            "color": {},
+            "text-content": "Save",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": 18.0,
+            "line-height": 1.2626953125,
+            "typeface": "Oxygen"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Frame 311",
+      "size": {
+        "width": 343.0,
+        "height": 30.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

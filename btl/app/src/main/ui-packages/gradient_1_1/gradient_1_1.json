@@ -1,0 +1,66 @@
+{
+  "name": "gradient_1_1",
+  "version": 33,
+  "source-key": {
+    "type": "figma",
+    "file": "ZOIsyQ1RNjRgsenuwzCjng",
+    "node": "302:977",
+    "version": "5948819833",
+    "component-id": "94d74c55012a4dd0b22e663e50b4f94d6ac9648b"
+  },
+  "default": "gradient (1) 1",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "image",
+        "id": "gradient (1) 1"
+      }
+    ],
+    "modes": {
+      "gradient (1) 1": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": false,
+            "children": [
+              "gradient (1) 1"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "gradient (1) 1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "image-content": "gradient_1_1.png",
+            "scale": "cover"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "gradient (1) 1",
+      "size": {
+        "width": 375.0,
+        "height": 812.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

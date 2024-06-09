@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_international_hours"
+        android:title="International Hours"
+        android:icon="@drawable/ic_international_hours" />
+    <item
+        android:id="@+id/nav_alarm"
+        android:title="Alarm"
+        android:icon="@drawable/ic_alarm" />
+    <item
+        android:id="@+id/nav_timer"
+        android:title="Timer"
+        android:icon="@drawable/ic_timer" />
+    <item
+        android:id="@+id/nav_stopwatch"
+        android:title="Stopwatch"
+        android:icon="@drawable/ic_stopwatch" />
+</menu>

@@ -1,0 +1,75 @@
+{
+  "name": "buttons",
+  "version": 33,
+  "source-key": {
+    "type": "figma",
+    "file": "ZOIsyQ1RNjRgsenuwzCjng",
+    "node": "302:984",
+    "version": "5948819833",
+    "component-id": "19608f3843b536372ff3fa719465a15c0a79522b"
+  },
+  "default": "Buttons",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "adin_component",
+        "id": "Buttons",
+        "key": "buttons"
+      }
+    ],
+    "modes": {
+      "Buttons": {
+        "rules": [
+          {
+            "id": "top_level",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Buttons"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "Buttons",
+            "design": "Gradient=no,Stroke=yes",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 222.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Buttons",
+      "size": {
+        "width": 222.0,
+        "height": 56.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
